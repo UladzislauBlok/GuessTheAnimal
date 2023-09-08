@@ -7,6 +7,7 @@ import org.animal.businessLogicLayer.requestService.FileRequestHandlerSingleton;
 import org.animal.businessLogicLayer.responseSevrice.FileResponse;
 import org.animal.businessLogicLayer.responseSevrice.FileResponseSingleton;
 import org.animal.businessLogicLayer.exceptions.NotFoundAnimalException;
+import org.animal.persistenceLayer.fileIO.JacksonDataBind;
 
 public class Controller {
     private final FileResponse response;
@@ -28,7 +29,10 @@ public class Controller {
     public void start() {
         System.out.println(response.getGreeting() + "\n");
 
-        TreeNode root = animalController.firstAnimalInputProcess();
+        TreeNode root = JacksonDataBind.fromJson("src/main/resources/TreeNode.json");
+
+        if (root.getValue() == null)
+            root = animalController.firstAnimalInputProcess();
 
         boolean isPlay = true;
         while (isPlay) {
@@ -59,6 +63,7 @@ public class Controller {
             isPlay = fileRequestHandler.getAndHandleAnswer();
         }
 
+        JacksonDataBind.toJson(root, "src/main/resources/TreeNode.json");
         System.out.println("\n" + response.getFarewell());
     }
 }

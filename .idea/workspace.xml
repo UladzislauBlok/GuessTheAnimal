@@ -4,21 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e91891ef-a173-4675-b2ff-f696f58f89ea" name="Changes" comment="Change the architecture, split into 3 layers. Add fact processing">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/animal/businessLogicLayer/GameService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/animal/businessLogicLayer/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/animal/businessLogicLayer/TreeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/animal/businessLogicLayer/exceptions/NotFoundAnimalException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/animal/presentationLayer/GameController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/animal/presentationLayer/ScannerSingleton.java" afterDir="false" />
+    <list default="true" id="e91891ef-a173-4675-b2ff-f696f58f89ea" name="Changes" comment="Add machine learning">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/animal/persistenceLayer/fileIO/JacksonDataBind.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/TreeNode.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/animal/businessLogicLayer/animalService/AnimalHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/animal/businessLogicLayer/AnimalService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/animal/businessLogicLayer/factService/FactHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/animal/businessLogicLayer/FactService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/animal/businessLogicLayer/requestService/FileRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/animal/businessLogicLayer/requestService/FileRequestHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/animal/presentationLayer/AnimalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/animal/presentationLayer/AnimalController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/animal/presentationLayer/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/animal/presentationLayer/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/animal/presentationLayer/FactController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/animal/presentationLayer/FactController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +78,7 @@
       <updated>1694016167675</updated>
       <workItem from="1694016168755" duration="2000" />
       <workItem from="1694170048509" duration="1341000" />
-      <workItem from="1694209633348" duration="1327000" />
+      <workItem from="1694209633348" duration="1964000" />
     </task>
     <task id="LOCAL-00001" summary="Add processing requests from the user. Create a class for reading files">
       <option name="closed" value="true" />
@@ -106,7 +96,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694170546948</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add machine learning">
+      <option name="closed" value="true" />
+      <created>1694211230664</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1694211230664</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +139,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add processing requests from the user. Create a class for reading files" />
     <MESSAGE value="Change the architecture, split into 3 layers. Add fact processing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change the architecture, split into 3 layers. Add fact processing" />
+    <MESSAGE value="Add machine learning" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add machine learning" />
   </component>
 </project>
