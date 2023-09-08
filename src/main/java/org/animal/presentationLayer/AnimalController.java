@@ -1,32 +1,32 @@
 package org.animal.presentationLayer;
 
-import org.animal.businessLogicLayer.animalService.AnimalHandler;
+import org.animal.businessLogicLayer.AnimalService;
+import org.animal.businessLogicLayer.TreeNode;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class AnimalController {
 
-    private final AnimalHandler animalHandler;
+    private final AnimalService animalHandler;
     private final Scanner scanner;
-    private static final List<String> animalList = new ArrayList<>();
 
-    public AnimalController(Scanner scanner) {
-        this.animalHandler = new AnimalHandler();
-        this.scanner = scanner;
+    public AnimalController() {
+        this.animalHandler = new AnimalService();
+        this.scanner = ScannerSingleton.getScanner();
     }
 
-    public void animalInputProcess() {
-        System.out.println("Enter the first animal:");
+    public TreeNode firstAnimalInputProcess() {
+        System.out.println("I want to learn about animals.");
+        System.out.println("Which animal do you like most?");
         System.out.print("> ");
-        animalList.add(animalHandler.handleAnimal(scanner.nextLine().toLowerCase()));
-        System.out.println("Enter the second animal:");
-        System.out.print("> ");
-        animalList.add(animalHandler.handleAnimal(scanner.nextLine().toLowerCase()));
+        String animalName = scanner.nextLine().toLowerCase();
+        return new TreeNode(animalHandler.handleAnimal(animalName));
     }
 
-    public static List<String> getAnimalList() {
-        return animalList;
+    public TreeNode gameEndAnimalInputProcess() {
+        System.out.println("I give up. What animal do you have in mind?");
+        System.out.print("> ");
+        String animalName = scanner.nextLine().toLowerCase();
+        return new TreeNode(animalHandler.handleAnimal(animalName));
     }
 }

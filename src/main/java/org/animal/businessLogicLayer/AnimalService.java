@@ -1,8 +1,8 @@
-package org.animal.businessLogicLayer.animalService;
+package org.animal.businessLogicLayer;
 
 import java.util.List;
 
-public class AnimalHandler {
+public class AnimalService {
     private final List<String> vowelLetters = List.of("a", "e", "i", "o", "u");
 
     public String handleAnimal(String animal) {
