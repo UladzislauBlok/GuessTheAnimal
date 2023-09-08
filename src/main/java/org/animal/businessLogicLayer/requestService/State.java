@@ -1,4 +1,4 @@
-package org.animal.RequestHandlers;
+package org.animal.businessLogicLayer.requestService;
 
 public enum State {
     TRUE,

@@ -1,4 +1,4 @@
-package org.animal.ReadUtil;
+package org.animal.persistenceLayer.fileIO;
 
 import java.io.*;
 import java.util.ArrayList;

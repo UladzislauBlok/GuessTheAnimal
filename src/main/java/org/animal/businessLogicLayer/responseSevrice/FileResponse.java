@@ -1,20 +1,20 @@
-package org.animal.ResponseUtil;
+package org.animal.businessLogicLayer.responseSevrice;
 
-import org.animal.ReadUtil.Reader;
+import org.animal.persistenceLayer.fileIO.Reader;
 
 import java.time.LocalTime;
 import java.util.List;
 import java.util.Random;
 
-public class Response {
+public class FileResponse {
     private final Random random;
     private final List<String> clarificationQuestions;
     private final List<String> farewellOptions;
 
-    Response() {
+    FileResponse() {
         this.random = new Random();
-        this.clarificationQuestions = Reader.readFile("src/main/resources/clarificationQuestions.txt");
-        this.farewellOptions = Reader.readFile("src/main/resources/farewellOptions.txt");
+        this.clarificationQuestions = Reader.readFile("C:\\JavaDev\\Guess the Animal (Java)\\Guess the Animal (Java)\\task\\src\\resources\\clarificationQuestions.txt");
+        this.farewellOptions = Reader.readFile("C:\\JavaDev\\Guess the Animal (Java)\\Guess the Animal (Java)\\task\\src\\resources\\farewellOptions.txt");
     }
 
     public String getClarification() {

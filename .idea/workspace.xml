@@ -4,29 +4,71 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e91891ef-a173-4675-b2ff-f696f58f89ea" name="Changes" comment="" />
+    <list default="true" id="e91891ef-a173-4675-b2ff-f696f58f89ea" name="Changes" comment="Add processing requests from the user. Create a class for reading files">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/animal/businessLogicLayer/animalService/AnimalHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/animal/businessLogicLayer/factService/FactHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/animal/businessLogicLayer/requestService/FileRequestHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/animal/businessLogicLayer/requestService/FileRequestHandlerSingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/animal/businessLogicLayer/responseSevrice/FileResponseSingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/animal/presentationLayer/AnimalController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/animal/presentationLayer/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/animal/presentationLayer/FactController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/animal/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/animal/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/animal/ReadUtil/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/animal/persistenceLayer/fileIO/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/animal/RequestHandlers/RequestHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/animal/RequestHandlers/RequestHandlerSingleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/animal/RequestHandlers/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/animal/businessLogicLayer/requestService/State.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/animal/ResponseUtil/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/animal/businessLogicLayer/responseSevrice/FileResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/animal/ResponseUtil/ResponseSingleton.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
   <component name="ProjectId" id="2V1uz7er6CFczp8hFKIbRrH46vB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/GitHub/Java/GuessTheAnimal/src/main/java/org/animal&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\GitHub\Java\GuessTheAnimal\src\main\java\org\animal" />
+      <recent name="C:\GitHub\Java\GuessTheAnimal\src\main\java\org\animal\ResponseUtil" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.animal" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -36,7 +78,50 @@
       <option name="presentableId" value="Default" />
       <updated>1694016167675</updated>
       <workItem from="1694016168755" duration="2000" />
+      <workItem from="1694170048509" duration="301000" />
     </task>
+    <task id="LOCAL-00001" summary="Add processing requests from the user. Create a class for reading files">
+      <option name="closed" value="true" />
+      <created>1694024895499</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1694024895499</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add processing requests from the user. Create a class for reading files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add processing requests from the user. Create a class for reading files" />
   </component>
 </project>
