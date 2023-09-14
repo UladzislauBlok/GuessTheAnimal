@@ -39,6 +39,8 @@ public class FileRequestHandler {
 
     public boolean getAndHandleAnswer() {
         String answer = scanner.nextLine().toLowerCase();
+        if (answer.isEmpty())
+            answer = " ";
         State state = handleAnswer(answer);
 
         while (state.equals(State.UNKNOWN_ANSWER)) {

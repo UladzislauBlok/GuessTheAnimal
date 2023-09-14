@@ -29,4 +29,10 @@ public class AnimalController {
         String animalName = scanner.nextLine().toLowerCase();
         return new TreeNode(animalHandler.handleAnimal(animalName));
     }
+
+    public String animalProcess() {
+        System.out.println("Enter the animal:");
+        System.out.print("> ");
+        return animalHandler.handleAnimal(scanner.nextLine().toLowerCase());
+    }
 }

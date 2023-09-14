@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e91891ef-a173-4675-b2ff-f696f58f89ea" name="Changes" comment="Add machine learning">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/animal/persistenceLayer/fileIO/JacksonDataBind.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/TreeNode.json" afterDir="false" />
+    <list default="true" id="e91891ef-a173-4675-b2ff-f696f58f89ea" name="Changes" comment="Add IO Json processing">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/animal/presentationLayer/MenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/animal/presentationLayer/TreeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/animals.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/animal/businessLogicLayer/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/animal/businessLogicLayer/GameService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/animal/businessLogicLayer/TreeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/animal/businessLogicLayer/TreeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/animal/businessLogicLayer/requestService/FileRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/animal/businessLogicLayer/requestService/FileRequestHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/animal/presentationLayer/AnimalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/animal/presentationLayer/AnimalController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/animal/presentationLayer/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/animal/presentationLayer/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/animal/presentationLayer/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/animal/presentationLayer/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/TreeNode.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,25 +49,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/GitHub/Java/GuessTheAnimal/src/main/java/org/animal",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/GitHub/Java/GuessTheAnimal/src/main/java/org/animal&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\GitHub\Java\GuessTheAnimal\src\main\java\org\animal" />
+      <recent name="C:\GitHub\Java\GuessTheAnimal\src\main\java\org\animal\businessLogicLayer" />
       <recent name="C:\GitHub\Java\GuessTheAnimal\src\main\java\org\animal\persistenceLayer\fileIO" />
       <recent name="C:\GitHub\Java\GuessTheAnimal\src\main\java\org\animal\ResponseUtil" />
     </key>
@@ -78,7 +86,9 @@
       <updated>1694016167675</updated>
       <workItem from="1694016168755" duration="2000" />
       <workItem from="1694170048509" duration="1341000" />
-      <workItem from="1694209633348" duration="1964000" />
+      <workItem from="1694209633348" duration="2175000" />
+      <workItem from="1694212176174" duration="1966000" />
+      <workItem from="1694689352575" duration="312000" />
     </task>
     <task id="LOCAL-00001" summary="Add processing requests from the user. Create a class for reading files">
       <option name="closed" value="true" />
@@ -104,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694211230664</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add IO Json processing">
+      <option name="closed" value="true" />
+      <created>1694211791677</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1694211791677</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +158,7 @@
     <MESSAGE value="Add processing requests from the user. Create a class for reading files" />
     <MESSAGE value="Change the architecture, split into 3 layers. Add fact processing" />
     <MESSAGE value="Add machine learning" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add machine learning" />
+    <MESSAGE value="Add IO Json processing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add IO Json processing" />
   </component>
 </project>

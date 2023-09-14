@@ -12,7 +12,7 @@ public class GameService {
     }
 
     public boolean handleRoot(TreeNode root) {
-        if (root.getLeft() == null && root.getRight() == null) {
+        if (root.isLeaf()) {
             System.out.println("Is it " + root.getValue() + "?");
             System.out.print("> ");
             if (fileRequestHandler.getAndHandleAnswer())
