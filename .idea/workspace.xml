@@ -4,18 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e91891ef-a173-4675-b2ff-f696f58f89ea" name="Changes" comment="Add IO Json processing">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/animal/presentationLayer/MenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/animal/presentationLayer/TreeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/animals.json" afterDir="false" />
+    <list default="true" id="e91891ef-a173-4675-b2ff-f696f58f89ea" name="Changes" comment="Add statistics processing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/animal/businessLogicLayer/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/animal/businessLogicLayer/GameService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/animal/businessLogicLayer/TreeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/animal/businessLogicLayer/TreeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/animal/businessLogicLayer/requestService/FileRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/animal/businessLogicLayer/requestService/FileRequestHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/animal/presentationLayer/AnimalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/animal/presentationLayer/AnimalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/animal/presentationLayer/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/animal/presentationLayer/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/animal/presentationLayer/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/animal/presentationLayer/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/TreeNode.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +78,9 @@
       <workItem from="1694170048509" duration="1341000" />
       <workItem from="1694209633348" duration="2175000" />
       <workItem from="1694212176174" duration="1966000" />
-      <workItem from="1694689352575" duration="312000" />
+      <workItem from="1694689352575" duration="753000" />
+      <workItem from="1695038974262" duration="219000" />
+      <workItem from="1696331206852" duration="485000" />
     </task>
     <task id="LOCAL-00001" summary="Add processing requests from the user. Create a class for reading files">
       <option name="closed" value="true" />
@@ -122,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694211791677</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add statistics processing">
+      <option name="closed" value="true" />
+      <created>1694689983497</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1694689983497</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +159,18 @@
     <MESSAGE value="Change the architecture, split into 3 layers. Add fact processing" />
     <MESSAGE value="Add machine learning" />
     <MESSAGE value="Add IO Json processing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add IO Json processing" />
+    <MESSAGE value="Add statistics processing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add statistics processing" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/animal/presentationLayer/TreeController.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
